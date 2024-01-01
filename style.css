@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.titulo_principal{
+    font-family: 'Oswald', sans-serif;
+    font-size: 38px;
+    text-align: center;
+    padding-top: 3%;
+    padding-right: 10%;
+    padding-left: 0;  
+    padding-bottom: 0; 
+}
+.main_menu{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 5px solid #9b1e1e;
+}
+/* estilo menu hamburguesa*/
+.navbar {
+    background-color: #9b1e1e;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bx-restaurant{
+    font-size: 60px;
+    padding-top: 3%;
+    padding-left: 8%;
+    padding-right: 0;
+}
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-list li {
+    margin-right: 20px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    background-color: #fff;
+    height: 3px;
+    width: 25px;
+    margin: 5px 0;
+    display: block;
+}
+.imagen_fondo1{
+    width: 100%;
+    filter: blur(1px);
+}
+.container {
+    position: relative;
+    z-index: -1;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(47, 47, 47, 0.5); /* Fondo semi-transparente para oscurecer la imagen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text_frase_principal{
+    color: #fff;
+    text-shadow:5px 5px 10px #0a0a0a;
+    font-size: 40px;
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+}
+h1{
+    font-size: 40px;
+    margin-top: 5%;
+    margin-bottom: 4%;
+    margin-left: 5%;
+    font-family: 'Oswald', sans-serif;
+}
+h2{
+    font-family: 'Cinzel', serif;
+    padding-top: 20px;
+    padding-bottom: 0;
+    color: #fff;
+    text-shadow: 3px 3px 2px #0a0a0a;
+    font-size: 35px;
+}
+.historia{
+    margin: 5%;
+    margin-top: 0;
+    font-size: 20px;
+    font-family: 'Sora', sans-serif;
+}
+.lacarta{
+    background: url(multimedia/img/fondo-carta.jpg);
+
+}
+.carta-imagenes img{
+    padding-inline: 42px;
+    padding-bottom: 5%;
+    border-radius: 80px;
+}
+/***/
+/* Estilo para la imagen */
+.contenedor-imagen {
+    position: relative;
+    display: inline-block;
+    display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+.contenedor-imagen img{
+    padding: 10px;
+    border-radius: 50px;
+}
+
+  /* Estilo para el texto sobre la imagen */
+  .texto-superior, .texto-inferior {
+    position: absolute;
+    font-size: 25px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    padding-top: 10%;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 2px;
+    text-shadow: 0 2px 2px #0a0a0a;
+  }
+
+  .texto-superior {
+    top: 10px;
+  }
+
+  .texto-inferior {
+    bottom: 10px;
+  }
+
+  /* Estilo para el botón */
+  #boton-mostrar-info {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    cursor: pointer;
+    color: #fff;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 1px #0a0a0a;
+  }
+
+  /* Estilo para la información adicional */
+  #informacion-adicional {
+    display: none;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    font-family: 'Sora', sans-serif;
+  }
+  .pedidos{
+    font-size: 40px;
+    padding-top: 5%;
+    text-align: center;
+  }
+  .icons-pedido{
+    font-size: 60px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .icons-pedido a{
+    padding: 5%;
+    color: #0a0a0a;
+    text-decoration: none;    
+}
+  .text-footer{
+    text-align: center;
+    font-family: 'Sora', sans-serif;
+  }
+@media screen and (max-width: 768px) {
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #5a1e1e;
+    }
+
+    .nav-list.show {
+        display: flex;
+    }
+
+    .nav-list li:first-child {
+        margin: 0;
+        margin-top: 2px;
+        margin-bottom: 10px;
+    }
+    .nav-list li {
+        margin: 20px;
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+}
